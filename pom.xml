@@ -21,7 +21,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.iluwatar</groupId>
     <artifactId>java-design-patterns</artifactId>
-    <version>1.17.0-SNAPSHOT</version>
+    <version>1.18.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <inceptionYear>2014</inceptionYear>
     <properties>
@@ -143,7 +143,10 @@
         <module>extension-objects</module>
         <module>marker</module>
         <module>cqrs</module>
-
+        <module>event-sourcing</module>
+        <module>data-transfer-object</module>
+    <module>throttling</module>
+        <module>partial-response</module>
     </modules>
 
     <dependencyManagement>
@@ -460,6 +463,19 @@
                     <skipForProjects>
                         <!-- skip for parent project -->
                         <param>java-design-patterns</param>
+                        <param>singleton</param>
+                        <param>factory-method</param>
+                        <param>abstract-factory</param>
+                        <param>builder</param>
+                        <param>prototype</param>
+                        <param>adapter</param>
+                        <param>bridge</param>
+                        <param>composite</param>
+                        <param>decorator</param>
+                        <param>facade</param>
+                        <param>flyweight</param>
+                        <param>proxy</param>
+                        <param>chain</param>
                     </skipForProjects>
                 </configuration>
             </plugin>
